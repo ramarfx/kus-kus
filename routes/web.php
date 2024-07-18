@@ -23,7 +23,7 @@ Route::get('/admin', function() {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
