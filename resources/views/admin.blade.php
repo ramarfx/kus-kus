@@ -666,7 +666,7 @@
                     </div>
                     <span class="profile-username">
                       <span class="op-7">Hi,</span>
-                      <span class="fw-bold">Hizrian</span>
+                      <span class="fw-bold">Ramadina</span>
                     </span>
                   </a>
                   <ul class="dropdown-menu dropdown-user animated fadeIn">
@@ -681,7 +681,7 @@
                             />
                           </div>
                           <div class="u-text">
-                            <h4>Hizrian</h4>
+                            <h4>Ramadina</h4>
                             <p class="text-muted">hello@example.com</p>
                             <a
                               href="profile.html"
@@ -699,7 +699,10 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Account Setting</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Logout</a>
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <button type="submit" class="dropdown-item" href="#">Logout</button>
+                        </form>
                       </li>
                     </div>
                   </ul>
