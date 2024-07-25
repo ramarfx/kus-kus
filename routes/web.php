@@ -18,7 +18,9 @@ Route::get('/', function () {
     return view('arsha');
 });
 
-Route::get('/admin', function() {
+Route::view('/template', 'layouts.template');
+
+Route::get('/admin', function () {
     return view('admin');
 });
 
@@ -35,4 +37,4 @@ Route::middleware('auth')->group(function () {
 
 // Route::view('/arsha', 'arsha');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';
