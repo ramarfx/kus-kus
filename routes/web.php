@@ -18,14 +18,14 @@ Route::get('/', function () {
     return view('arsha');
 });
 
-Route::view('/template', 'layouts.template');
+// Route::view('/template', 'layouts.template');    
 
 Route::get('/admin', function () {
     return view('admin');
 });
 
 Route::get('/dashboard', function () {
-    return view('admin');
+    return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
